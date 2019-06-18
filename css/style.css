@@ -1,0 +1,133 @@
+body {
+   background-image: url("/img/background.jpg");
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   font-family: Helvetica, sans-serif;
+}
+
+.quiz-frame {
+   width: 80%;
+   border: 3px solid rgba(0, 0, 0, 0.3);
+   height: 60vh;
+   margin: 0 auto;
+   position: relative;
+   overflow: hidden;
+}
+
+h1 {
+   text-align: center;
+}
+
+li.supporter {
+   position: relative;
+   height: 100%;
+   width: 100%;
+   display: block;
+   float: left;
+   list-style: none;
+   margin-right: 10px;
+}
+
+.box {
+   height: 95%;
+   width: 95%;
+   left: 20px;
+   top: 20px;
+   background: rgba(34, 122, 158, 0.2);
+   position: absolute;
+   transform: translateX(105%);
+   border-radius: 10px;
+   transition: 0.5s all;
+}
+
+.layout-box {
+  color: white;
+  width: 95%;
+  height: 95%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.question-top {
+   color: white;
+   height: 30%;
+}
+
+.buttons-part {
+   height: 70%;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 20px;
+}
+
+.buttons-part button {
+   width: 150px;
+   height: 40px;
+   color: white;
+   background: rgb(128, 89, 89);
+   border: none;
+   border-radius: 10px;
+   padding: 10px;
+   cursor: pointer;
+   transition: 0.2s all;
+}
+
+
+.buttons-part button:hover {
+   background: rgba(128, 89, 89, 0.8)
+}
+
+.box.active, frame.active {  
+   transform: translateX(0);
+}
+
+
+.score-page {
+   background: rgba(34, 122, 158, 0.2);
+   color: white;
+   height: 95%;
+   width: 95%;
+   margin: 20px auto;
+   display: grid;
+   justify-items: center;
+   align-items: center;
+}
+
+.timer-container {
+   width: 80%;
+   height: 15px;
+   border: 2px solid black;
+   border-radius: 10px;
+}
+
+.timer-bar {
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+   background: crimson;
+}
+
+.play-again {
+   color: white;
+   text-decoration: none;
+   padding: 20px;
+   background: crimson;
+   border: none;
+   font-weight: bolder;
+   border-radius: 3px;
+   cursor: pointer;
+   transition: 0.1s all;
+}
+
+.play-again:hover {
+   opacity: 0.9;
+}
+
+.play-again:active {
+   transform: scale(0.9);
+}
