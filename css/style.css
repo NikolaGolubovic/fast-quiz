@@ -1,5 +1,10 @@
 body {
-   background-image: url("/img/background.jpg");
+   /* background-image doesn't work with gh pages so it is changed to gradient */
+   /* background-image: url("/img/background.jpg"); */
+   background: #b92b27;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
    display: flex;
    justify-content: center;
    align-items: center;
